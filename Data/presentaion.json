@@ -1,0 +1,37 @@
+[
+  {
+    "courseNumber": "1",
+    "title": "Mattematik 2b",
+    "courseLength": "15 veckor",
+    "startDate": "2027-09-01T00:00:00",
+    "endDate": "2027-12-21T00:00:00",
+    "courseType": "Distance",
+    "teacher": {
+      "fieldOfKnowledge": "Mattematik",
+      "firstName": "Anders",
+      "lastName": "Nilsson",
+      "phoneNumber": "+46-707-4628023",
+      "address": "Hammargatan 5",
+      "postcode": "33292",
+      "city": "Jönköping"
+    },
+    "students": [
+      {
+        "firstName": "Jonas",
+        "lastName": "Axelsson",
+        "phoneNumber": "+46-707-632789",
+        "address": "Stenbyn 29",
+        "postcode": "39293",
+        "city": "Hjo"
+      },
+      {
+        "firstName": "Bertil",
+        "lastName": "Axelsson",
+        "phoneNumber": "+46-707-897298",
+        "address": "Stenbyn 29",
+        "postcode": "39293",
+        "city": "Hjo"
+      }
+    ]
+  }
+]
