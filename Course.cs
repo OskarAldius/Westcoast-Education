@@ -28,12 +28,16 @@ public class Course
         }
 
         return $"Titel: {Title}\n" +
+        $"Kurs nummer: {CourseNumber}\n" +
         $"Kurslängd: {CourseLength}\n" +
+        $"Kurs start: {StartDate}\n" +
+        $"Kurs slut: {EndDate}\n" +
         $"Lärare {Teacher}\n" +
         $"Studenter\n" +
         $"{studentInfo}";
 
     }
+
 
 
     public static List<Course> ListAll()

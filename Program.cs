@@ -1,9 +1,12 @@
-﻿namespace Westcoast_Education;
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Westcoast_Education;
 
 class Program
 {
     static void Main()
     {
+
 
         Students students1 = new()
         {
@@ -45,6 +48,20 @@ class Program
 
 
         };
+        Teachers teacher1 = new()
+        {
+
+            FirstName = "Karl",
+            LastName = "Karlsson",
+            FieldOfKnowledge = "Svenska",
+            PhoneNumber = "+46-707-4628023",
+            Address = "brunsbogatan 5",
+            Postcode = "45672",
+            City = "Göteborg",
+
+
+
+        };
 
         Course course = new()
         {
@@ -61,7 +78,25 @@ class Program
 
 
         };
+
+
+        Course course1 = new()
+        {
+            Teacher = teacher1,
+            Students = student,
+            CourseNumber = "2",
+            Title = "Svenska",
+            CourseLength = "15 veckor",
+            StartDate = new DateTime(2027, 9, 1),
+            EndDate = new DateTime(2027, 12, 21),
+            CourseType = CourseType.Distance
+
+        };
         course.Add();
+        course1.Add();
+
+
+
 
         List<Course> courses = Course.ListAll();
 

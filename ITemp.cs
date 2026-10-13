@@ -4,4 +4,6 @@ public interface ITemp
 {
     public void Add() { }
 
+    string? ToString();
+
 }
