@@ -70,8 +70,8 @@ class Program
             CourseNumber = "1",
             Title = "Mattematik 2b",
             CourseLength = "15 veckor",
-            StartDate = new DateTime(2027, 9, 1),
-            EndDate = new DateTime(2027, 12, 21),
+            StartDate = new DateOnly(2027, 9, 1),
+            EndDate = new DateOnly(2027, 12, 21),
             CourseType = CourseType.Distance
 
 
@@ -87,23 +87,29 @@ class Program
             CourseNumber = "2",
             Title = "Svenska",
             CourseLength = "15 veckor",
-            StartDate = new DateTime(2027, 9, 1),
-            EndDate = new DateTime(2027, 12, 21),
-            CourseType = CourseType.Distance
+            StartDate = new DateOnly(2027, 9, 1),
+            EndDate = new DateOnly(2027, 12, 21),
+            CourseType = CourseType.Classroom
 
         };
         course.Add();
         course1.Add();
 
 
+        ListAllInfo();
 
 
+    }
+
+    public static void ListAllInfo()
+    {
         List<Course> courses = Course.ListAll();
 
         foreach (var savedCourse in courses)
         {
             System.Console.WriteLine(savedCourse);
         }
+
 
     }
 }

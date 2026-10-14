@@ -9,16 +9,16 @@ public class Teachers : Person
 
 
 
-    public static List<Teachers> ListAll()
-    {
-        var _path = Environment.CurrentDirectory + "/Data/presentaion.json";
-        var json = Presentaion<Teachers>.Read(_path);
-        return json;
-    }
+    // public static List<Teachers> ListAll()
+    // {
+    //     var _path = Environment.CurrentDirectory + "/Data/presentaion.json";
+    //     var json = Presentaion<Teachers>.Read(_path);
+    //     return json;
+    // }
 
     public override string ToString()
     {
-        return $" Lärar namn: {FirstName} lärar efternamn: {LastName} Telefonummer: {PhoneNumber} Adress: {Address} Postnummer: {Postcode} Stad: {City}";
+        return $"Namn: {FirstName} Efternamn: {LastName} Telefonummer: {PhoneNumber} Adress: {Address} Postnummer: {Postcode} Stad: {City}";
     }
 
 }

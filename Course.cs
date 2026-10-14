@@ -6,8 +6,8 @@ public class Course
     public string? CourseNumber { get; set; }
     public string? Title { get; set; }
     public string? CourseLength { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public DateOnly StartDate { get; set; }
+    public DateOnly EndDate { get; set; }
     public CourseType CourseType { get; set; }
     public Teachers? Teacher { get; set; }
     public List<Students> Students { get; set; } = [];
