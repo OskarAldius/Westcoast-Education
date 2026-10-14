@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace Westcoast_Education;
 
-public class Presentaion<T> : ITemp
+public class Presentaion<T>
 {
 
     private static readonly JsonSerializerOptions _options = new()
