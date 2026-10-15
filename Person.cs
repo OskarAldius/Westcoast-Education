@@ -8,4 +8,10 @@ public class Person : IPerson
     public string? Address { get; set; }
     public string? Postcode { get; set; }
     public string? City { get; set; }
+
+
+    public override string ToString()
+    {
+        return $"Namn: {FirstName} Efternamn: {LastName} Telefonummer: {PhoneNumber} Adress: {Address} Postnummer: {Postcode} Stad: {City}";
+    }
 }

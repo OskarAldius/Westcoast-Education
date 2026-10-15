@@ -2,7 +2,7 @@
 
 public class Course
 {
-    public List<Course> _courses = [];
+
     public string? CourseNumber { get; set; }
     public string? Title { get; set; }
     public string? CourseLength { get; set; }
